@@ -1,0 +1,4 @@
+GRANT ALL PRIVILEGES ON db_laravel.* TO 'root'@'localhost' IDENTIFIED BY 'rootpass';
+FLUSH PRIVILEGES;
+
+composer create-project laravel/laravel:8.* web-laravel
