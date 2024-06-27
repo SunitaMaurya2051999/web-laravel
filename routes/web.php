@@ -10,6 +10,7 @@ use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\ServicesController;
 use App\Http\Controllers\Frontend\ShopController;
 use App\Http\Controllers\Frontend\ThankyouController;
+use App\Http\Controllers\Frontend\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,3 +31,5 @@ Route::get('/contact',[ContactController::class,'index']);
 Route::get('/services',[ServicesController::class,'index']);
 Route::get('/shop',[ShopController::class,'index']);
 Route::get('/thankyou',[ThankyouController::class,'index']);
+Route::get('/login',[LoginController::class,'index']);
+Route::post('/login-user',[LoginController::class,'login_user']);
